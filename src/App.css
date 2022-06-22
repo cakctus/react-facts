@@ -1,38 +1,114 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #24262E;
+  overflow: hidden;
+  
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav-header {
+  background: #1F1D26;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub-nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.react-logo {
+  position: relative;
+}
+
+.react-facts {
+  color: #61DAFB;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: auto 0;
+  position: absolute;
+}
+
+.ul-li-header {
+  display: flex;
+}
+
+.ul-li-header > li {
+  padding: 5px;
+}
+
+ul li::marker {
+  color: #70D3F1;
+  font-size: 1.5em;
+}
+
+.li-items-header {
+  list-style-type: none;
+}
+
+.li-items-header a {
+  text-decoration: none;
+  color: #DEEBF7;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.li-items-header a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Content */
+
+.content {
+  position: relative;
+}
+
+.react-logo-content {
+  fill: #052b35;
+  position: absolute;
+  right: -50%;
+  top: 40%;
+}
+
+.react-fact {
   color: white;
+  font-family: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.react-facts-li > li {
+  color: white;
+  font-size: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* Footer */
+
+.footer {
+  background-color: #202124;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-content {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 50%;
+  margin: 1.1rem;
 }
