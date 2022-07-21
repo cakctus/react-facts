@@ -1,23 +1,19 @@
-
-
 body {
   margin: 0;
   padding: 0;
-  background: #24262E;
+  /* background: #24262e; */
   overflow: hidden;
-  
+  color: black;
 }
 
 .App {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
-
 .nav-header {
-  background: #1F1D26;
+  background: #1f1d26;
   width: 100vw;
 }
 
@@ -35,7 +31,7 @@ body {
 }
 
 .react-facts {
-  color: #61DAFB;
+  color: #61dafb;
   font-weight: 600;
   font-size: 2rem;
   margin: auto 0;
@@ -51,7 +47,7 @@ body {
 }
 
 ul li::marker {
-  color: #70D3F1;
+  color: #70d3f1;
   font-size: 1.5em;
 }
 
@@ -61,7 +57,7 @@ ul li::marker {
 
 .li-items-header a {
   text-decoration: none;
-  color: #DEEBF7;
+  color: #deebf7;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -75,6 +71,8 @@ ul li::marker {
 
 .content {
   position: relative;
+  color: white;
+  font-size: 30px;
 }
 
 .react-logo-content {
@@ -85,16 +83,14 @@ ul li::marker {
 }
 
 .react-fact {
-  color: white;
+  /* color: white; */
   font-family: 900;
 }
 
 .react-facts-li > li {
-  color: white;
+  /* color: white; */
   font-size: 700;
 }
-
-
 
 /* Footer */
 
@@ -103,12 +99,49 @@ ul li::marker {
   width: 100%;
   position: fixed;
   bottom: 0;
+  text-align: center;
+  color: white;
+  transition: all 1s;
 }
 
 .footer-content {
-  color: white;
   font-weight: 600;
   font-size: 1.2rem;
-  padding-left: 50%;
   margin: 1.1rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.toggle_label {
+  background: #000000;
+  border: 5px solid #9a9a9a;
+  width: 50px;
+  height: 25px;
+  display: block;
+  border-radius: 100px;
+  margin: 15px;
+  border: 0px solid #9a9a9a;
+}
+
+span.toggle_span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: flex;
+  background: white;
+  border: 1px solid #6b6b6b;
+  transition: 0.5s all;
+}
+
+/* on label */
+input#type2:checked + label.toggle_label.type2 {
+  background: rgb(157, 156, 152);
+}
+/* on span */
+input#type2:checked + label.toggle_label.type2 > span.toggle_span.type2 {
+  margin-left: 55%;
+  background: #24262e;
 }
